@@ -1,0 +1,31 @@
+use example;
+show databases;
+show tables;
+
+INSERT INTO customers (name,email,address)
+ VALUES ('alan','alan@gmail.com','111 alan st'),
+       ('jeff','jeff@gmail.com', '222 jeff st'),
+       ('aaa','aaa@gmail.com','333 aaa st'),
+       ('bbb','bbb@gmail.com', '444 bbb st'),
+       ('ccc','ccc@gmail.com', '555 ccc st');
+ select * from customers;
+ 
+   
+ INSERT INTO products (pro_name,price,stock)
+ VALUES ('pro1',11,15),
+       ('pro2', 22,15),
+       ('pro3',33.99,15),
+       ('pro4',44.50, 50),
+       ('pro5',55,50);
+select * from products;
+
+INSERT INTO orders (customer_id,product_id,date_placed,quantity)
+VALUES (1,2,'2021-05-12', 5);
+INSERT INTO orders (customer_id,product_id,date_placed,quantity)
+VALUES (4,3,'2021-05-12', 4),
+       (3,2,'2021-05-12', 3),
+       (2,1,'2021-05-12', 8),
+       (5,5,'2021-05-12', 1);
+select * from orders;
+
+
